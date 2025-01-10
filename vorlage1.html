@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    body{
+        background-color:black;
+    }
+
+    #div1 {
+        position:absolute;
+        width:100%;
+        background-color:black;
+        height:10%;
+        top:0;
+        left:0;
+    }
+    #div1 #text1 {
+        text-decoration:none;
+        position:absolute;
+        color:white;
+        left:20%;
+        font-size:400%;
+        display: inline-block;
+        top:30%;
+
+    }
+    #div1 #text1::after {
+        content: '';
+        position: absolute;
+        left: 50%; /* Startpunkt in der Mitte */
+        bottom: 0;
+        width: 0%; /* Startet mit 0% Breite */
+        height: 2px; /* Höhe der Linie */
+        background: white; /* Farbe des Unterstrichs */
+        transform: translateX(-50%); /* Zentriert die Linie */
+        transition: width 0.3s ease;
+        }
+
+        #div1 #text1:hover::after {
+        width: 100%; /* Linie wächst bis zur vollen Breite */
+    }
+
+    #div1 #text2 {
+        text-decoration:none;
+        position:absolute;
+        color:white;
+        left:65%;
+        font-size:400%;
+        display: inline-block;
+        top:30%;
+
+    }
+    #div1 #text2::after {
+        content: '';
+        position: absolute;
+        left: 50%; /* Startpunkt in der Mitte */
+        bottom: 0;
+        width: 0%; /* Startet mit 0% Breite */
+        height: 2px; /* Höhe der Linie */
+        background: white; /* Farbe des Unterstrichs */
+        transform: translateX(-50%); /* Zentriert die Linie */
+        transition: width 0.3s ease;
+        }
+
+        #div1 #text2:hover::after {
+        width: 100%; /* Linie wächst bis zur vollen Breite */
+    }
+    #div1 #Titel{
+        position:absolute;
+        font-size:700%;
+        color:white;
+        left:40%;
+        top:-25%;
+        text-decoration:underline white;
+        }
+
+        #bild1{
+            position:absolute;
+            width:auto;
+            height:70%;;
+            left:62%;
+            top:15%;
+            border-radius:100px;
+        }
+        #bild2{
+            position:absolute;
+            width:auto;
+            height:40%;;
+            left:50%;
+            top:55%;
+            border-radius:100px;
+        }
+        #bild3 {
+            position:absolute;
+            width:5%;
+            height:auto;
+            border-radius:100px;
+            top:1%;
+            left:0.5%;
+        }
+        
+
+        .div2{
+            position:absolute;
+            width:100%;
+            top:11%;
+            background-color:white;
+            height:0.2%;
+
+        }
+
+
+        .o{
+            position:absolute;
+            color:white;
+            text-decoration:underline;
+            font-size:500%;
+            left:3%;
+            top:10%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .a1{
+            position:absolute;
+            top:19%;
+            font-size:260%;
+            left:2%;
+            color:white;
+            text-align:left;
+        }
+        .a2{
+            position:absolute;
+            top:30%;
+            font-size:220%;
+            left:2%;
+            color:white;
+            text-align:left;
+        }
+        .a3{
+            position:absolute;
+            top:51%;
+            font-size:220%;
+            left:2%;
+            color:white;
+            text-align:left;
+        }
+        .a4{
+            position:absolute;
+            top:72%;
+            font-size:220%;
+            left:2%;
+            color:white;
+            text-align:left;
+        }
+        .a5{
+            position:absolute;
+            top:83%;
+            font-size:220%;
+            left:2%;
+            color:white;
+            text-align:left;
+        }
+
+       
+        
+    </style>
+</head>
+<body>
+
+    <div id="div1">
+        <p ><a id="text1" href="index.html">Home</a></p>
+        <p ><a id="text2" href="3.html">About Us</a></p>
+        <h1 id="Titel" >Tha.Scene</h1>
+    </div>
+
+    <img id="bild1" src="drake.tha.scene.webp" alt="drakeimg">
+    <img id="bild2" src="kendrick-lamar.tha.scene.webp" alt="lamarimg">
+
+    <img alt="tha.scene.mainimg" id="bild3" src="IMG_0061.jpg">
+
+    <div class="div2"></div>
+
+
+    <p class="o">Der Beef zwischen Drake und Kendrick <br></p>
+
+    
+    <p class="a1">Willkommmen zu den ersten News von Tha.Scene! <br>Drake und Kendrick Lamar - zwei Hiphop-Giganten, die die Szene auf ihre ganz eigegen Wege geprägt haben,<br>
+    stoßen aufeinander. Doch woher kommt dieser Konflikt? Und was bedeutet er für die Community?</p>
+    <p class="a2">
+    Die meisten der Fans werden es mittlerweile mitbekommen haben: Zwischen Drake und Kendrick <br>sind über die letzten Jahre hinweg immer mehr Spannungen entstanden.
+    Begonnen hatte das Ganze 2013,<br> als Kendrick in einem kontroversen Vers auf Big Seans Track 'Control' einige andere Künstler,<br> darunter Drake,
+    herausforderte. Doch was zunächst als kleiner Wettbewerb galt, entwickelte sich <br>über die Zeit hinweg zu einer verbitterten Rivalität.
+
+    Seitdem verpassten sich beide Artists immer wieder<br> Seitenhiebe über ihre Songs. Viele Fans vermuten beispielsweise,<br> dass sowohl in Drakes 
+    Mixtape 'If You're Reading This It's too Late' oder<br> Kendricks 'To Pimp a Butterfly' beide Artists aufeinander abzielen.</p>
+     <p class="a3">2024 eskalierte der Konflikt schließlich:<br>  
+     Kendrick brachte im März 2024 zusammen mit Future und Metro Boomin 'Like That'<br> heraus, in dem er die Idee<br> einer 'Big Three' infrage stellte - ein klarer Angriff auf Drake. Einen Monat später
+     konterte <br> Drake mit dem Song 'Push Ups', in dem er Kendrick dann direkt angriff.<br> Im Mai forderte er ihn dann mit 'Taylor Made Freestyle' endgültig heraus.
+    In weiteren Tracks<br> zielten beide wieder mit Themen wie Familie und persönlichen Aspekten aufeinander,<br> was die Stimmung der letzten Monate stark anheizte.</p>
+    <p class="a4">
+    Doch die Konkurrenz bezieht sich nicht nur auf die Musik, schließlich sind beide Artists Giganten <br>in ihrem Genre , die sich auch auf Erfolgsbasis immer wieder überbieten!<br>
+    So wurde Kendrick 11 mal für die Grammys nominiert, von denen er 5 gewann, <br>während Drake in dieser Zeit die Charts und Streaming-Dienste dominierte.</p>
+    <p class="a5">
+    Aber egal auf welcher Seite man steht - <br> Konflikte haben die Hiphop-Szene schon immer bewegt und vorangebracht!<br> Und was meint ihr - hat dieser Konflikt <br>sie eher belebt 
+    oder reißt sie tiefe Spalten in die Community?</p>
+    
+
+
+
+
+    
+</body>
+</html>

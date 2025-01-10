@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-color:black;
+        }
+
+        #div1 {
+            position:absolute;
+            width:100%;
+            background-color:black;
+            height:10%;
+            top:0;
+            left:0;
+        }
+        #div1 #text1 {
+            text-decoration:none;
+            position:absolute;
+            color:white;
+            left:20%;
+            font-size:400%;
+            display: inline-block;
+            top:30%;
+
+        }
+        #div1 #text1::after {
+            content: '';
+            position: absolute;
+            left: 50%; /* Startpunkt in der Mitte */
+            bottom: 0;
+            width: 0%; /* Startet mit 0% Breite */
+            height: 2px; /* Höhe der Linie */
+            background: white; /* Farbe des Unterstrichs */
+            transform: translateX(-50%); /* Zentriert die Linie */
+            transition: width 0.3s ease;
+            }
+
+            #div1 #text1:hover::after {
+            width: 100%; /* Linie wächst bis zur vollen Breite */
+        }
+
+        #div1 #text2 {
+            text-decoration:none;
+            position:absolute;
+            color:white;
+            left:65%;
+            font-size:400%;
+            display: inline-block;
+            top:30%;
+
+        }
+        #div1 #text2::after {
+            content: '';
+            position: absolute;
+            left: 50%; /* Startpunkt in der Mitte */
+            bottom: 0;
+            width: 0%; /* Startet mit 0% Breite */
+            height: 2px; /* Höhe der Linie */
+            background: white; /* Farbe des Unterstrichs */
+            transform: translateX(-50%); /* Zentriert die Linie */
+            transition: width 0.3s ease;
+            }
+
+            #div1 #text2:hover::after {
+            width: 100%; /* Linie wächst bis zur vollen Breite */
+        }
+        #div1 #Titel{
+            position:absolute;
+            font-size:700%;
+            color:white;
+            left:40%;
+            top:-25%;
+            text-decoration:underline white;
+            }
+            #bild1{
+                position:absolute;
+                width:20%;
+                left:10%;
+                border-radius:100px;
+                top:25%;
+                transition:0.2s ease;
+            }
+            #bild1:hover{
+            box-shadow: 0 10px 60px grey;
+        }
+
+        #bild2 {
+            position:absolute;
+            width:5%;
+            height:auto;
+            border-radius:100px;
+            top:1%;
+            left:0.5%;
+        }
+            .header{
+                position:absolute;
+                color:white;
+                font-size:500%;
+                left:2%;
+                top:10%;
+                text-decoration:underline;
+            }
+            #div2 .o1{
+            position:absolute;
+            color:black;
+            font-size:240%;
+            top:57%;
+            left:13%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .div3{
+            position:absolute;
+            width:100%;
+            top:11%;
+            background-color:white;
+            height:0.2%;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div1">
+        <p ><a id="text1" href="index.html">Home</a></p>
+        <p ><a id="text2" href="3.html">About Us</a></p>
+        <h1 id="Titel" >Tha.Scene</h1>
+    </div>
+
+    <img alt="tha.scene.mainimg" id="bild2" src="IMG_0061.jpg">
+
+
+    <p class="header">News</p>
+
+<div id="div2">
+<a href="vorlage1.html"> <img id="bild1" src="drake.tha.scene.png" alt="drakeimg"></a>
+<p class="o1">Der Beef zwischen Drake <br>und Kendrick Lamar</p>
+</div>
+
+<div class="div3"></div>
+
+
+
+    
+</body>
+</html>
