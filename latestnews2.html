@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel/Tha.Scene</title>
+    <style>
+        body{
+            background-color:black;
+        }
+
+        #div1 {
+            position:absolute;
+            width:100%;
+            background-color:black;
+            height:10%;
+            top:0;
+            left:0;
+        }
+        #div1 #text1 {
+            text-decoration:none;
+            position:absolute;
+            color:white;
+            left:20%;
+            font-size:400%;
+            display: inline-block;
+            top:30%;
+
+        }
+        #div1 #text1::after {
+            content: '';
+            position: absolute;
+            left: 50%; /* Startpunkt in der Mitte */
+            bottom: 0;
+            width: 0%; /* Startet mit 0% Breite */
+            height: 2px; /* Höhe der Linie */
+            background: white; /* Farbe des Unterstrichs */
+            transform: translateX(-50%); /* Zentriert die Linie */
+            transition: width 0.3s ease;
+            }
+
+            #div1 #text1:hover::after {
+            width: 100%; /* Linie wächst bis zur vollen Breite */
+        }
+
+        #div1 #text2 {
+            text-decoration:none;
+            position:absolute;
+            color:white;
+            left:65%;
+            font-size:400%;
+            display: inline-block;
+            top:30%;
+
+        }
+        #div1 #text2::after {
+            content: '';
+            position: absolute;
+            left: 50%; /* Startpunkt in der Mitte */
+            bottom: 0;
+            width: 0%; /* Startet mit 0% Breite */
+            height: 2px; /* Höhe der Linie */
+            background: white; /* Farbe des Unterstrichs */
+            transform: translateX(-50%); /* Zentriert die Linie */
+            transition: width 0.3s ease;
+            }
+
+            #div1 #text2:hover::after {
+            width: 100%; /* Linie wächst bis zur vollen Breite */
+        }
+        #div1 #Titel{
+            position:absolute;
+            font-size:700%;
+            color:white;
+            left:40%;
+            top:-25%;
+            text-decoration:underline white;
+        }
+
+        #div2{
+            position:absolute;
+            width:100%;
+            top:11%;
+            background-color:white;
+            height:0.2%;
+
+        }
+        #bild1 {
+            position:absolute;
+            width:5%;
+            height:auto;
+            border-radius:100px;
+            top:1%;
+            left:0.5%;
+        }
+        .a1{
+            position:absolute;
+            color:white;
+            font-size:220%;
+            left:2%;
+            top:22%;
+        }
+        .a2{
+            position:absolute;
+            color:white;
+            font-size:220%;
+            left:4%;
+            top:42%;
+        }
+        .a3{
+            position:absolute;
+            color:white;
+            font-size:220%;
+            left:3%;
+            top:65%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div1">
+        <p ><a id="text1" href="index.html">Home</a></p>
+        <p ><a id="text2" href="about.html">About Us</a></p>
+        <h1 id="Titel" >Tha.Scene</h1>
+    </div>
+
+
+ <div id="div2"></div>
+
+    <img alt="tha.scene.mainimg" id="bild1" src="IMG_0061.jpg">
+
+    <p class="a1">Sean John Combs - besser bekannt als ,Diddy' ,P Diddy' oder ,Love' ist <br>einer der bekanntesten und einflussreichsten Menschen, der die Welt seit <br>geraumer Zeit in Schockstarre versetzt.
+        Egal, wo auf Social Media man sich befindet - <br>man ist garantiert schon auf den kontroversen Rapper, Produzenten und Unternehmer<br> gestoßen, denn das Internet brummt nur so von 
+        Gerüchten, Skanalen und <br>Anschuldigungen. Doch um einmal Spekulationen und Fakten zu trennen, <br>hier einmal, was aus offiziellen Quellen bekannt ist:
+    </p>
+<p class="a2">Dass Combs bereits häufiger rechtliche Probleme hatte, ist kein Geheimnis. <br>Bereits 1999, in den frühen Jahren seiner Karriere, wurde er nach einer Schießerei<br> im Club New York wegen illegalen Waffenbesitzes angeklagt – 
+    ein Vorfall, der<br> damals für großes Aufsehen sorgte, Combs jedoch straflos davonkommen ließ.<br> Doch nicht nur strafrechtliche Auseinandersetzungen werfen ein Schlaglicht auf ihn:<br> Auch ehemalige Mitarbeiter reichten Klagen ein, in denen sie berichteten, Combs habe<br>ihnen angeblich 
+    ‚unmögliche Aufgaben‘ gestellt, wie etwa nächtliche Sonderanforderungen<br> oder Arbeiten weit über ihre Zuständigkeiten hinaus.
+
+    </p>
+
+    <p class="a3">Aber auch in neuesten News füllt Diddy immer wieder die Schlagzeilen - <br>so reichte seine Ex-Freundin Cassie Ventura im November 2023 eine Klage ein,<br> in der sie Combs jahrelangem Missbrauchs und Vergewaltigung beschuldigte.
+       Diese Klage führte dazu,<br> dass sich weitere mutmaßliche Opfer meldeten, davon einige zum Tatzeitpunkt minderjährig,<br> die Diddy ebenfalls wegen sexueller Übergriffe beschuldigten. Berichten zufolge klagten mehr als<br> 120 Männer und Frauen gegen Diddy.
+    </p>
+
+    <p class="a4">In Folge dieser Entwicklungen befindet sich Sean Combs nun seit Mitte September 2024 in Untersuchungshaft: sein Prozess beginnt im Mai 2025 vor dem United States District Court for the Southern District of New York.</p>
+
+
+    
+</body>
+</html>
