@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tha.Scene - Drake Beispiel</title>
+  <style>
+    body {
+      font-family:'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 Spalten */
+      gap: 10%; /* Abstand von 10% */
+      width: 80%; /* Gesamte Breite des Containers */
+    }
+
+    .grid-item {
+      background-color: white;
+      border-radius: 15%;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .grid-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.8);
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+    }
+
+    img {
+      width: 100%; /* Bild nimmt die gesamte Breite des Containers ein */
+      height: auto; /* Proportionale Höhe */
+      display: block;
+    }
+
+    p {
+      margin: 5% 20%;
+      font-size: 60px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container" id="gridContainer">
+    <!-- Dynamische Inhalte werden hier eingefügt -->
+  </div>
+
+  <script>
+    const gridContainer = document.getElementById('gridContainer');
+
+    // Funktion, um einen neuen Bild-Link hinzuzufügen
+    function addImageLink(title, imageUrl, linkUrl) {
+      const gridItem = document.createElement('div');
+      gridItem.className = 'grid-item';
+      gridItem.innerHTML = `
+        <a href="${linkUrl}" target="_blank">
+          <img src="${imageUrl}" alt="${title}">
+          <p>${title}</p>
+        </a>
+      `;
+      gridContainer.appendChild(gridItem);
+    }
+
+    // Beispiel: Drake-Bild hinzufügen
+    addImageLink('Drake News', 'drake.tha.scene.webp', 'https://example.com/drake');
+    addImageLink('Drake News', 'drake.tha.scene.webp', 'https://example.com/drake');
+    addImageLink('Drake News', 'drake.tha.scene.webp', 'https://example.com/drake');
+    addImageLink('Drake News', 'drake.tha.scene.webp', 'https://example.com/drake');
+    addImageLink('Drake News', 'drake.tha.scene.webp', 'https://example.com/drake');
+    addImageLink('Drake News', 'drake.tha.scene.webp', 'https://example.com/drake');
+    addImageLink('Drake News', 'drake.tha.scene.webp', 'https://example.com/drake');
+    addImageLink('Drake News', 'drake.tha.scene.webp', 'https://example.com/drake');
+    addImageLink('Drake News', 'drake.tha.scene.webp', 'https://example.com/drake');
+    addImageLink('Drake News', 'drake.tha.scene.webp', 'https://example.com/drake');
+    addImageLink('Drake News', 'drake.tha.scene.webp', 'https://example.com/drake');
+  </script>
+</body>
+</html>
