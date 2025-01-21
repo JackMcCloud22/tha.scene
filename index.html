@@ -179,6 +179,46 @@
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
+        .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 Spalten */
+      gap: 10%; /* Abstand von 10% */
+      width: 80%; /* Gesamte Breite des Containers */
+      position:absolute;
+      top:65%;
+      left:10%;
+      
+    }
+
+    .grid-item {
+      background-color: white;
+      border-radius: 15%;
+      overflow: hidden;
+      text-align: center;
+      transition:0.2s ease;
+    }
+
+    .grid-item:hover {
+        box-shadow: 0 10px 60px grey;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+    }
+
+    img {
+      width: 100%; /* Bild nimmt die gesamte Breite des Containers ein */
+      height: auto; /* Proportionale Höhe */
+      display: block;
+    }
+
+    p {
+      margin: 5% 0%;
+      font-size:calc(1vh + 1vw);
+      color: black;
+    }
+
 
 
 
@@ -201,22 +241,41 @@
         <h1 id="Titel" >Tha.Scene</h1>
     </div>
 
-    <div id="div2">
-        
-        
-        <div><a href="latestnews1.html" ><img src="drake.tha.scene.png" id="bild4"></a>
-        <h4 class="o1">Der Beef zwischen Drake <br>und Kendrick Lamar </h4></div>
-        <div><a href="about.html" ><img src="aboutimg.png" id="bild3"></a>
-        <h4 class="o2">About Us</h4></div>
-        <div><a href="vorlage3.html" ></a></div>
-    </div>
+   
     <p class="Überschrift">Aktuelles:</p>
 
     <img alt="tha.scene.mainimg" id="bild2" src="IMG_0061.jpg">
 
     
        
-   
+    <div class="grid-container" id="gridContainer">
+        <!-- Dynamische Inhalte werden hier eingefügt -->
+      </div>
+      <p id="header">News</p>
+    
+      <script>
+        const gridContainer = document.getElementById('gridContainer');
+    
+        // Funktion, um einen neuen Bild-Link hinzuzufügen
+        function addImageLink(title, imageUrl, linkUrl) {
+          const gridItem = document.createElement('div');
+          gridItem.className = 'grid-item';
+          gridItem.innerHTML = `
+            <a href="${linkUrl}" target="_blank">
+              <img src="${imageUrl}" alt="${title}">
+              <p>${title}</p>
+            </a>
+          `;
+          gridContainer.appendChild(gridItem);
+        }
+    
+        // Beispiel: Drake-Bild hinzufügen
+        
+        addImageLink('About Us', 'we.tha.scene.webp', 'about.html');
+        addImageLink('Der Beef zwischen Drake<br>und Kendrick Lamar', 'drake.tha.scene.webp', 'latestnews1.html');
+        
+        
+      </script>
     
 
     
